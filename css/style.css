@@ -85,9 +85,10 @@ ul{
 	text-align: center;
 	top: 0px;
 	color: rgba();
-	float: relative;
+	float: center;
 	background-color: white;
 	padding: 60px;
+	width: 100%
 }
 
 
