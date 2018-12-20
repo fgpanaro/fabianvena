@@ -4,49 +4,66 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8_spanish_ci" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fabián Vena Estudio</title>
+<link rel="stylesheet" href="https://use.typekit.net/exe5iid.css">
 <link rel='stylesheet' id='bootstrap-min-css'  href='css/bootstrap.min.css' type='text/css' media='all' />
 <link rel="stylesheet" href="css/responsiveslides.css">
 <link rel='stylesheet' id='style-css'  href='css/style.css' type='text/css' media='all' />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<link rel='stylesheet' id='style-css'  href='css/responsive.css' type='text/css' media='all' />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script src="js/responsiveslides.js"></script>
+<script src="js/general.js"></script>
 <script>
     $(function () {
       $("#slider1").responsiveSlides({
-        speed: 800
+        auto: false,
+        nav: true,
+        speed: 500,
+        namespace: "centered-btns",
       });
     });
 </script>
 </head>
 <body>
-
 	<div class="container">
 		<header class="site-header relative float-header">
 			<div class="header-wrap">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="row-md-4">
+						<div class="col">
 							<a href="" title="Fabián Vena Estudio"><img class="logo-header" src="img/logo.png" alt="Fabián Vena Estudio" /></a>
 						</div>
-						<div id="navbar" class="row-md-8 offset-md-1 align-items-center">
+						<div id="navbar" class="col-8 align-items-left">
 							<div>
-								<nav id="mainnav" class="mainnav" role="navigation">
-									
-										<ul id="menu-principal" class="menu">
-											<li id="menu-item-1" class=""><a href="">Home</a></li>
-											<li id="menu-item-2" class=""><a href="">Cursos</a></li>
-											<li id="menu-item-3" class=""><a href="">Galería</a></li>
-											<li id="menu-item-4" class=""><a href="">Contacto</a></li>
-										</ul>
-													
+								<nav class="mainnav" role="navigation">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="cursos.html">Cursos</a></li>
+											<li><a href="">Staff</a></li>
+											<li><a href="">Galería</a></li>
+											<li><a href="">Contacto</a></li>
+										</ul>		
 								</nav>
 							</div>	
+						</div>
+						<div id="menuButton" class="col-3 menu_icon">
+							  <div class="bar1"></div>
+							  <div class="bar2"></div>
+							  <div class="bar3"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 		
-		<div id="res-slider">
+		<div id="hidden-navbar" class="overlay-navbar">
+			<div><a href="index.html">Home</a></div>
+			<div><a href="cursos.html">Cursos</a></div>
+			<div><a href="">Staff</a></div>
+			<div><a href="">Galería</a></div>
+			<div><a href="">Contacto</a></div>
+		</div>
+		
+		<div id="res-slider" class="rslides_container">
 			<ul class="rslides" id="slider1">
 			  <li><img src="pictures/_IRE6505.jpg" alt=""></li>
 			  <li><img src="pictures/_IRE6497.jpg" alt=""></li>
@@ -54,37 +71,68 @@
 			</ul>
 		</div>
 		
-		<!-- ACA FRANQUITOOOXXXXX -->
-		<div class="container">
-			<div class="background">
-				<h1 class="texto">EL ESTUDIO</h1>
-				<div class="parrafos">
-					<p class="middletext ele">
-					La actuación como fenómeno expresivo es una actividad de las más lúdicas y terapéuticas que el ser humano pudo haber desarrollado. El haber tenido la posibilidad de transitarla durante gran parte de mi vida me lleva a afirmar algo así. La sensación de felicidad, de libertad, de juego y de creatividad al salir de una clase de teatro en mi adolescencia, siguen presentes al día de hoy. 
+		<div class="mp_textbox_container">
+			<h1>EL ESTUDIO</h1>
+			
+			<div class="row mp_text">
+				<div class="col-md padding_right">
+					<img src="img/firstletter.png" class="firstletter">
+					<p align="justify">
+					a actuación como fenómeno expresivo es una actividad de las más lúdicas y terapéuticas que el ser humano pudo haber desarrollado. El haber tenido la posibilidad de transitarla durante gran parte de mi vida me lleva a afirmar algo así. La sensación de felicidad, de libertad, de juego y de creatividad al salir de una clase de teatro en mi adolescencia, siguen presentes al día de hoy. 
 					</p>
-					<p class="middletext">
+					<p class="fl_margin" align="justify">
 					Sabiendo que el entrenamiento de la voz y la preparación del cuerpo son herramientas fundamentales para el actor, comencé mis estudios formales de actuación en el teatro IFT. Estos conocimientos no solamente me ayudaron a desarrollar el oficio con la absoluta seguridad de estar en el camino correcto, sino que me siguen acompañando al encarar cada nuevo proyecto.
 					</p>
-					<p class="middletext">
+					<p class="fl_margin" align="justify">
 					Conservo en mi memoria activa las grandes lecciones que he tenido en el desarrollo de este arte. Mis maestros, los geniales directores y mis queridos y talentosos colegas con los que me he cruzado en el camino siempre van a estar presentes en todo lo que haga. La pasión por actuar, la responsabilidad de contar algo, la necesidad de tomar riesgos, la honestidad de afrontar nuestras limitaciones con el objetivo de superarlas, las ganas, la ilusión y el amor por la actuación me unen a ellos. Y hoy siento la alegría y la energía de poder empezar a transmitir lo que me han enseñado.
 					</p>
 				</div>
-				<div class="parrafos2">
-					<p class="middletext">
+				<div class="col-md padding_left">
+					<p class="fl_margin" align="justify">
 					Bajo los conceptos del Método de las Acciones Físicas, de Constantin Stanislavski, transitaremos todo lo relacionado al oficio del actor. El estudio profundo y creativo de la técnica vocal, el conocimiento y la preparación del cuerpo en escena y el simple abordaje del deseo de actuar nos va a llevar invariablemente por un camino de constante expresividad. Nuestro principal objetivo es la búsqueda permanente del crecimiento artístico.
 					</p>
-					<p class="middletext">
+					<p class="fl_margin" align="justify">
 					En el arte de actuar, la experiencia definitivamente es completa con la presencia del público. Por eso, en todos los niveles, al finalizar cada año, haremos una muestra del trabajo incorporado con la idea de aproximarnos a todo lo que rodea a una propuesta artística. En la expresión del ser humano radica la verdad y la belleza. Acá no existen ni el éxito ni el fracaso, sino la convicción y la sensación de sentirnos libres y partícipes necesarios.
 					</p>
-					<p class="middletext">
+					<p class="fl_margin" align="justify">
 					De todas formas, mañana nos va a salir mejor.
 					</p>
-					<p id="pie">
-					Fabián Vena
+					<p align="center">
+					Fabián Vena.
 					</p>
 				</div>
 			</div>
 		</div>
+		<!-- ACA FRANQUITOOOXXXXX 
+		<div class="background">
+			<h1 class="texto">EL ESTUDIO</h1>
+			<div class="parrafos">
+				<p class="middletext ele">
+				La actuación como fenómeno expresivo es una actividad de las más lúdicas y terapéuticas que el ser humano pudo haber desarrollado. El haber tenido la posibilidad de transitarla durante gran parte de mi vida me lleva a afirmar algo así. La sensación de felicidad, de libertad, de juego y de creatividad al salir de una clase de teatro en mi adolescencia, siguen presentes al día de hoy. 
+				</p>
+				<p class="middletext">
+				Sabiendo que el entrenamiento de la voz y la preparación del cuerpo son herramientas fundamentales para el actor, comencé mis estudios formales de actuación en el teatro IFT. Estos conocimientos no solamente me ayudaron a desarrollar el oficio con la absoluta seguridad de estar en el camino correcto, sino que me siguen acompañando al encarar cada nuevo proyecto.
+				</p>
+				<p class="middletext">
+				Conservo en mi memoria activa las grandes lecciones que he tenido en el desarrollo de este arte. Mis maestros, los geniales directores y mis queridos y talentosos colegas con los que me he cruzado en el camino siempre van a estar presentes en todo lo que haga. La pasión por actuar, la responsabilidad de contar algo, la necesidad de tomar riesgos, la honestidad de afrontar nuestras limitaciones con el objetivo de superarlas, las ganas, la ilusión y el amor por la actuación me unen a ellos. Y hoy siento la alegría y la energía de poder empezar a transmitir lo que me han enseñado.
+				</p>
+			</div>
+			<div class="parrafos2">
+				<p class="middletext">
+				Bajo los conceptos del Método de las Acciones Físicas, de Constantin Stanislavski, transitaremos todo lo relacionado al oficio del actor. El estudio profundo y creativo de la técnica vocal, el conocimiento y la preparación del cuerpo en escena y el simple abordaje del deseo de actuar nos va a llevar invariablemente por un camino de constante expresividad. Nuestro principal objetivo es la búsqueda permanente del crecimiento artístico.
+				</p>
+				<p class="middletext">
+				En el arte de actuar, la experiencia definitivamente es completa con la presencia del público. Por eso, en todos los niveles, al finalizar cada año, haremos una muestra del trabajo incorporado con la idea de aproximarnos a todo lo que rodea a una propuesta artística. En la expresión del ser humano radica la verdad y la belleza. Acá no existen ni el éxito ni el fracaso, sino la convicción y la sensación de sentirnos libres y partícipes necesarios.
+				</p>
+				<p class="middletext">
+				De todas formas, mañana nos va a salir mejor.
+				</p>
+				<p id="pie">
+				Fabián Vena
+				</p>
+			</div>
+		</div>-->
+	</div>
 </body>
 
 </html>
